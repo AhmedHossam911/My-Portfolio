@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Hossam | Portfolio</title>
+    <meta name="description" content="This website has all my details, practical experience and all my previous work">
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <link rel="stylesheet" href="CSS/Main.css">
+    <link rel="stylesheet" href="CSS/Screens.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <h1>AH<span>M</span>ED</h1>
+            </a>
+            <nav>
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#Certifiacte">Certifiacte</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Social">Social Media</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="Home" id="Home">
+        <div class="container">
+            <div class="image">
+                <img src="img/Me.png" alt="Profile" />
+            </div>
+            <div class="content">
+                <h1>Ahmed Hossam</h1>
+                <h2><span>Front-End</span> Developer</h2>
+                <a href="img/CV.pdf" target="_blank" class="btn">View & Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="About" id="About">
+        <div class="container">
+            <div class="content">
+                <h1>About Me</h1>
+                <p>My name is Ahmed Hossam El-Dine Mohammed, and I am a student at Helwan University in Cairo, Egypt,
+                    pursuing a B.Sc. in Commerce and Business Administration with a major in Business Information
+                    Systems (BIS) and a 3.9 CGPA. I have technical skills in HTML, CSS, and Python, and I aspire to
+                    become a front-end developer, focusing on creating responsive and visually appealing web interfaces.
+                    I am also involved in various student and volunteer activities, such as attending events and
+                    participating in web development committees. Additionally, I possess strong soft skills, including
+                    effective communication, public speaking, teamwork, and self-discipline.</p>
+            </div>
+            <div class="image-about">
+                <img src="img/laptop.png" alt="Profile" />
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="container">
+            <div class="bars">
+                <div class="skill">
+                    <p>OFFICE Apps</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;">95%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Certifiacte">
+        <h2>My Certificates</h2>
+        <div class="container">
+            <div class="certificate-grid">
+                <div class="certificate" onclick="openModal('img/cer (1).jpg')">
+                    <img src="img/cer (1).jpg" alt="Certificate 1">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (2).jpg')">
+                    <img src="img/cer (2).jpg" alt="Certificate 2">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (3).jpg')">
+                    <img src="img/cer (3).jpg" alt="Certificate 3">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (4).jpg')">
+                    <img src="img/cer (4).jpg" alt="Certificate 4">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (5).jpg')">
+                    <img src="img/cer (5).jpg" alt="Certificate 5">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (6).jpg')">
+                    <img src="img/cer (6).jpg" alt="Certificate 6">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (7).jpg')">
+                    <img src="img/cer (7).jpg" alt="Certificate 7">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (8).jpg')">
+                    <img src="img/cer (8).jpg" alt="Certificate 8">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (9).jpg')">
+                    <img src="img/cer (9).jpg" alt="Certificate 9">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (10).jpg')">
+                    <img src="img/cer (10).jpg" alt="Certificate 10">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (11).jpg')">
+                    <img src="img/cer (11).jpg" alt="Certificate 11">
+                </div>
+                <div class="certificate" onclick="openModal('img/cer (12).jpg')">
+                    <img src="img/cer (12).jpg" alt="Certificate 12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <section class="Portfolio" id="Portfolio">
+        <div class="container">
+            <div class="content">
+                <h1>Portfolio</h1>
+                <p class="sub-text">Here are some of my projects</p>
+            </div>
+            <div class="work-card">
+                <div class="card">
+                    <h3>Faculty Portal</h3>
+                    <img src="img/Proj1.png" alt="Project" />
+                    <p>The website "Portal" appears to be an academic management system. It includes features such as
+                        personal data management, course grades, study timetables, exam schedules, hours progress, and
+                        fee information. There are also sections for uploading photos and filing complaints. The system
+                        indicates whether academic registration and questionnaires are open or closed.</p>
+                    <a target="_blank" href="https://ahmedhossam911.github.io/Portal/">Click to view</a>
+                </div>
+                <div class="card">
+                    <h3>Company Template 1</h3>
+                    <img src="img/Proj2.png" alt="Project" />
+                    <p>The website "Leon" is a responsive and minimal agency web template. It features sections for
+                        home, portfolio, about, services, and contact information. The design emphasizes creativity and
+                        productivity with services in graphic design, UI/UX, web design, and web development. The
+                        portfolio section showcases various projects, while the about section highlights the agency's
+                        philosophy of "less is more." The contact section provides an email address and social media
+                        links for further inquiries.</p>
+                    <a target="_blank"
+                        href="https://ahmedhossam911.github.io/HTML_And_CSS_Template_One-Responsive_site-/">Click to
+                        view</a>
+                </div>
+                <div class="card">
+                    <h3>Company Template 2</h3>
+                    <img src="img/Proj3.png" alt="Project" />
+                    <p>The website is a portfolio template titled "Kasper," showcasing a modern and clean design built
+                        with HTML and CSS. It features sections for services, portfolio, about, pricing, and contact
+                        information. The site highlights the company's focus on responsive and browser-friendly design,
+                        clean code, and various projects in photography, web development, and app design. There are
+                        testimonials, skill summaries, and pricing plans available. The contact section includes social
+                        media links and contact details.</p>
+                    <a target="_blank" href="https://ahmedhossam911.github.io/Second-Website-CSS-HTML-ONLY/">Click to
+                        view</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="scripts.js"></script>
+
+    <footer id="Social">
+        <div class="container">
+            <p>My Social Accounts</p>
+            <div class="social-icons">
+                <a href="#Home"><i class="fas fa-home"></i></a>
+                <a target="_blank" href="https://www.facebook.com/ahmed9112004"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://x.com/Ahmed511315"> <i class="fa-brands fa-x-twitter"></i></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/ahmed-hossam-1aa97b250/"> <i
+                        class="fab fa-linkedin"></i> </a>
+                <a target="_blank" href="https://github.com/AhmedHossam911"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://wa.me/qr/FKGLO3AE34TED1"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">&copy; 2021 <span>Kasper</span> All Right Reserved</p>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top-button" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+        {
+            // Get a reference to the button
+            var scrollToTopButton = document.getElementById("scroll-to-top-button");
+
+            // Show or hide the button based on the user's scroll position
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            });
+
+            // Scroll to the top when the button is clicked
+            scrollToTopButton.addEventListener("click", function () {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+            });
+
+        }        
+    </script>
+</body>
+
+</html>

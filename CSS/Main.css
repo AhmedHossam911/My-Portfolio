@@ -1,0 +1,548 @@
+:root {
+    --section-padding: 100px
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px
+}
+
+header .container::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #a2a2a2;
+    bottom: 0;
+    width: calc(100% - 30px);
+    left: 15px
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center
+}
+
+nav a {
+    padding: 40px 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+    position: relative;
+    z-index: 2;
+    color: #fff
+}
+
+nav .active,
+nav a:hover {
+    color: #006dff;
+    transition: .3s;
+    border-bottom: #006dff solid 2px
+}
+
+header span{
+    color: #006dff;
+}
+
+
+.fas.fa-bars.toggle-menu {
+    color: #fff;
+    font-size: 22px
+}
+
+.Home {
+    height: 100vh;
+    background-image: url(../img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.Home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content,
+.image {
+    z-index: 1;
+    justify-self: flex-end;
+    text-align: center;
+    color: white;
+}
+
+.Home span {
+    color: #006dff;
+}
+
+.Home a {
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #006eff8a;
+    text-align: center;
+}
+
+.Home a:hover {
+    transform: scale(1.2);
+    background-color: #006dff;
+    transition-duration: 1s;
+}
+
+.Home .image img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.Home .image {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Home .image img:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+
+}
+
+.About {
+    background-color: #4a2e31;
+}
+
+.About .content {
+    color: #fff;
+}
+
+.Portfolio h1,
+.About h1 {
+    margin: 0;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+.About .container {
+    display: grid;
+    grid-template-areas: "content img";
+    grid-gap: 50px;
+    padding: 30px;
+}
+
+.image-about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.About img {
+    width: 100%;
+}
+
+.About p {
+    text-align: left;
+    line-height: 30px;
+}
+
+#skills {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #442725;
+    color: white;
+}
+
+.person:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+#skills h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.skill p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    width: 80%;
+    background-color: #ddd;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-level {
+    height: 20px;
+    line-height: 20px;
+    background-color: #006dff;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+}
+
+.skill-level::after {
+    content: attr(data-skill);
+    position: absolute;
+    top: -30px;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.Portfolio {
+    background-color: #442725;
+    padding: 50px;
+}
+
+.work-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+
+.card {
+    padding: 10px;
+    background-color: #2c172399;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: #2c1723;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 0 10px 10px;
+}
+
+.card img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.card a {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #006eff8a;
+    text-align: center;
+}
+
+.card a:hover {
+    transform: scale(1.1);
+    background-color: #006eff;
+    transition-duration: 0.3s;
+}
+
+.card p {
+    margin-top: 20px;
+    height: 50%;
+}
+
+.sub-text {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#Certifiacte {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #4a2e31;
+    color: white;
+}
+
+#Certifiacte h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.certificate {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+}
+
+.certificate p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.certificate:hover {
+    transform: scale(1.05);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #4a2e31;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%)
+}
+
+footer img {
+    margin-bottom: 20px
+}
+
+footer p:not(.copyright) {
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+    font-size: 22px;
+    width: fit-content;
+    margin: 20px auto;
+    margin-top: 0;
+}
+
+footer .social-icons i {
+    padding: 10px 15px;
+    transition-duration: 0.3s;
+}
+
+footer .social-icons i:hover {
+    transform: scale(1.6)
+}
+
+.fa-home:hover {
+    color: red
+}
+
+.fa-facebook-f:hover {
+    color: #006dff
+}
+
+.fa-linkedin:hover {
+    color: #007bb5
+}
+
+.fa-github:hover,
+.fa-x-twitter:hover {
+    color: black;
+}
+
+.fa-whatsapp:hover {
+    color: #25d366;
+}
+
+
+footer .container {
+    position: relative
+}
+
+.copyright {
+    padding: 20px 0 20px 0
+}
+
+footer span {
+    color: var(--main-color)
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scroll-to-top i {
+    animation-name: UpDown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #006dff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    z-index: 1;
+    /* Set a higher z-index value */
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}
+
+@keyframes UpDown {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10%);
+    }
+
+    60% {
+        transform: translateY(-10%);
+    }
+}
