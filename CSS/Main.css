@@ -91,7 +91,7 @@ nav a:hover {
     border-bottom: #006dff solid 2px
 }
 
-header span{
+header span {
     color: #006dff;
 }
 
@@ -450,6 +450,7 @@ footer .social-icons i:hover {
     transform: scale(1.6)
 }
 
+.fa-youtube:hover,
 .fa-home:hover {
     color: red
 }
@@ -462,8 +463,7 @@ footer .social-icons i:hover {
     color: #007bb5
 }
 
-.fa-github:hover,
-.fa-x-twitter:hover {
+.fa-github:hover {
     color: black;
 }
 
